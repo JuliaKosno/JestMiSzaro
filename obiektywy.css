@@ -1,0 +1,60 @@
+body{
+	background-color: #404040;
+}
+
+h1{
+	font-size: 30px;
+}
+.obl{
+	display: block;
+	align-items: center;
+	margin-top: 50px;
+	margin-left:20%;
+	border: 1px solid white;
+	margin-right: 20%;
+}
+.quote{
+	font-family:  : italic;
+}
+p{
+	margin-top: 10px;
+}
+#panel{
+	margin-left:20%;
+	margin-right:20%;
+	margin-top: 20px;
+}
+.pole{
+	padding: 10px;
+	display: inline-block;
+}
+
+#uzysk-ogniskowa{
+	padding:5px;
+	background-color: white;
+	border: 1px solid black;
+	color:black;
+	font-size: 15px;
+}
+.wynik{
+	display: inline-block;
+	margin-top:20px; 
+	padding: 10px;
+	border: 1px solid white; 
+
+}
+.przycisk{
+	margin-top: 20px;
+	display: inline-block;
+	margin-left: 20%;
+	padding: 5px;
+}
+.link {
+text-decoration: none; 
+color:white; 
+
+
+}
+a:hover{
+	color:pink;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> Jest mi szaro </title>
+		<link rel="stylesheet" 
+			type="text/css"
+			href="index1.css"
+			/>
+		<link rel="stylesheet" 
+			type="text/css"
+			href="obiektywy.css"
+			/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css_fa/all.css">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:ital@1&display=swap" rel="stylesheet">
+</head>
+	<body>
+		<header>
+			<div id="page-title">
+					Jest Mi Szaro
+			</div>
+			<nav>
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbt">
+					<i class="fas fa-bars"></i>
+				</label>
+				<div class="nav-bar">
+					<ul id="nav-list">
+						<li><a   href="index.html">Home </a></li>
+						<li><a href="Omnie.html">O mnie</a></li>
+						<li><a href="Gallery.html">Galeria</a></li>
+						<li><a href="Formularz.html">Terminy</a></li>
+						<li><a href="Regulamin.html">Regulamin</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id="panel">
+			<h1> Obliczanie ogniskowej w zależności od obiektywu oraz matrycy aparatu </h1>
+			<p class="quote">'Dużym problemem dla świeżo upieczonych posiadaczy lustrzanek jest przeliczanie ogniskowych obiektywów. Producenci obiektywów mają w swojej ofercie obiektywy pełnoklatkowe, jak i szkiełka pod matryce APS-C'</p>
+			<p> Aby zgłebić sie w temat polecam przyjrzeć się artykułowi dostępnym pod adresem : <a href="https://spidersweb.pl/2013/02/obiektywy-szkla.html" class='link'> Obiektywnie o szkłach </a></p>
+		</div>
+		<div class="obl">
+			<div class="pole">
+			Rodzaj obiektywu:
+				<select  id="obiektyw">
+					<option> FF</option>
+					<option> APS-C</option>
+				</select>
+			</div>
+			<div class="pole">
+			Rodzaj matrycy:
+				<select id="matryca">
+					<option>FF</option>
+					<option>APS-C</option>
+				</select>
+			</div>
+		<div class="pole">
+			Aparat:
+			<select id="aparat">
+				<option>Nikon</option>
+				<option>Sony</option>
+				<option>Pentax</option>
+				<option>Canon</option>
+				<option>Olympus</option>
+			</select>
+		</div>
+		<div class="pole">
+			Ogniskowa obiektywu:
+			<input type="number" id="ogniskowa" min="0" max="1000"><span> mm </span>
+		</div>
+	</div>
+	<div class="przycisk">
+	<input type="submit" class="sprawdz" onclick="sprawdz()" value="sprawdź">
+	</div>
+		<div class="wynik">
+			Uzyskana ogniskowa: 
+			<span id="uzysk-ogniskowa">-----</span>
+		</div>
+		<script src="ogniskowa.js"></script>
+</body>
+</html>
